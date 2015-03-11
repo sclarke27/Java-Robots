@@ -1,0 +1,13 @@
+AN009b - Using The BPI-216 Serial LCD Module
+
+The BPI-216 module consists of a 2 line by 16 character (2x16) LCD with a built in serial interface.  The serial interface allows the BPI-216 to be easily programmed. 
+ 
+AppNote009b-BPI216.exe - AppNote009b (Self extracting zip, includes the following files 145K) 
+AppNote009b-BPI216.pdf - Using the BPI-216 (PDF 118K)
+BPI216.java            - Library for the BPI-216 Serial LCD Module.
+BPI216.pdf             - Library JavaDocs in PDF format. (PDF 19K)
+BPI216Animation.java   - Will display an animated sequence with custom generated characters for the BPI-216 serial LCD.
+BPI216Demo.java        - Demonstrate all methods from the BPI216 library for the BPI-216 serial LCD.
+BPI216Test.java        - Test program to verify the BPI-216 serial LCD is properly configured.
+
+

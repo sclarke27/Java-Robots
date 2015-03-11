@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="JavelinDirect.exe"/>
+    <OBJFILES value="Main.obj CJavaClass.obj CJEMLinker.obj CObject.obj Errors.obj Java.obj 
+      NativeMethods.obj OptionVar.obj TSXComm.obj Utils.obj 
+      ..\ide\serial\ComDrv32.obj"/>
+    <RESFILES value="JavelinDirect.res"/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES)"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="vcl.lib rtl.lib"/>
+    <SPARELIBS value="rtl.lib vcl.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;..\ide\serial"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG;WIN32"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="JavelinDirect.bpf"/>
+    <INCLUDEPATH value="..\ide\serial;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;&quot;C:\Documents and Settings\Administrator\My Documents\Chris\CRL\javelin\cli&quot;;$(BCB)\include;$(BCB)\include\vcl;&quot;C:\Documents and Settings\Administrator\My Documents\Chris\CRL\javelin\ide\serial&quot;;&quot;C:\Program Files\madCollection\madBasic\BCB 6&quot;;&quot;C:\Program Files\madCollection\madDisAsm\BCB 6&quot;;&quot;C:\Program Files\madCollection\madExcept\BCB 6&quot;"/>
+    <LIBPATH value="&quot;C:\Program Files\Borland\CBuilder6\Components\Indy9\C6&quot;;..\ide\serial;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;&quot;C:\Documents and Settings\Administrator\My Documents\Chris\CRL\javelin\cli&quot;;$(BCB)\lib\obj;$(BCB)\lib;&quot;C:\Documents and Settings\Administrator\My Documents\Chris\CRL\javelin\ide\package&quot;;$(BCB)\Projects\Lib;&quot;C:\Program Files\madCollection\madBasic\BCB 6&quot;;&quot;C:\Program Files\madCollection\madDisAsm\BCB 6&quot;;&quot;C:\Program Files\madCollection\madExcept\BCB 6&quot;"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -tWC 
+      -tWM -c"/>
+    <PFLAGS value="-$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -ap -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0x32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="JavelinDirect.res" FORMNAME="" UNITNAME="JavelinDirect.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="JavelinDirect.bpf" FORMNAME="" UNITNAME="JavelinDirect" CONTAINERID="BPF" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Main.cpp" FORMNAME="" UNITNAME="Main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CJavaClass.cpp" FORMNAME="" UNITNAME="CJavaClass.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CJEMLinker.cpp" FORMNAME="" UNITNAME="CJEMLinker.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CObject.cpp" FORMNAME="" UNITNAME="CObject.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Errors.cpp" FORMNAME="" UNITNAME="Errors.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Java.cpp" FORMNAME="" UNITNAME="Java.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NativeMethods.cpp" FORMNAME="" UNITNAME="NativeMethods.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="OptionVar.cpp" FORMNAME="" UNITNAME="OptionVar.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TSXComm.cpp" FORMNAME="" UNITNAME="TSXComm.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Utils.cpp" FORMNAME="" UNITNAME="Utils.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ide\serial\ComDrv32.pas" FORMNAME="" UNITNAME="ComDrv32" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+c:\program files\borland\cbuilder6\Projects\Bpl\dclusr60.bpl=Borland User Components
+
+[HistoryLists\hlIncludePath]
+Count=3
+Item0=C:\Program Files\Borland\CBuilder6\Projects;C:\Documents and Settings\Administrator\My Documents\Chris\CRL\javelin\cli;$(BCB)\include;$(BCB)\include\vcl;C:\Documents and Settings\Administrator\My Documents\Chris\CRL\javelin\ide\serial
+Item1=C:\Documents and Settings\Administrator\My Documents\Chris\CRL\javelin\cli;$(BCB)\include;$(BCB)\include\vcl;C:\Documents and Settings\Administrator\My Documents\Chris\CRL\javelin\ide\serial
+Item2=C:\Documents and Settings\Administrator\My Documents\Chris\CRL\javelin\cli;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=6
+Item0=C:\Program Files\Borland\CBuilder6\Projects;C:\Documents and Settings\Administrator\My Documents\Chris\CRL\javelin\cli;$(BCB)\lib\obj;$(BCB)\lib;C:\Documents and Settings\Administrator\My Documents\Chris\CRL\javelin\ide\package;$(BCB)\Projects\Lib
+Item1=C:\Documents and Settings\Administrator\My Documents\Chris\CRL\javelin\cli;$(BCB)\lib\obj;$(BCB)\lib;C:\Documents and Settings\Administrator\My Documents\Chris\CRL\javelin\ide\package;$(BCB)\Projects\Lib
+Item2=C:\Documents and Settings\Administrator\My Documents\Chris\CRL\javelin\cli;$(BCB)\lib\obj;$(BCB)\lib;C:\Documents and Settings\Administrator\My Documents\Chris\CRL\javelin\ide\package;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item3=C:\Documents and Settings\Administrator\My Documents\Chris\CRL\javelin\cli;$(BCB)\lib\obj;$(BCB)\lib;C:\Documents and Settings\Administrator\My Documents\Chris\CRL\javelin\ide\package
+Item4=C:\Documents and Settings\Administrator\My Documents\Chris\CRL\javelin\cli;$(BCB)\lib\obj;$(BCB)\lib;C:\Documents and Settings\Administrator\My Documents\Chris\CRL\javelin\ide\serial
+Item5=C:\Documents and Settings\Administrator\My Documents\Chris\CRL\javelin\cli;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=2
+Item0=_DEBUG;WIN32
+Item1=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=--path &quot;C:\Documents and Settings\Administrator\My Documents\Chris\CRL\javelin\lib;C:\Documents and Settings\Administrator\My Documents\Chris\CRL\javelin\Projects&quot;  --listen &quot;RoombaTest&quot;
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

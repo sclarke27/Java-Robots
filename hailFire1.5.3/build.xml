@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+
+<project name="hailstorm.project" default="usage" basedir=".">
+	<!-- set global properties for this build -->
+	<property name="src" 		location="src"/>
+	<property name="build" 		location="build"/>
+	<property name="fileroot" 	value="x:\hailstorm"/>
+	
+	<!-- ========================================================================
+	Help on usage. List available targets
+	======================================================================== -->
+	<target name="usage" >
+	
+		<echo message="------------------------------------------------------"/>
+		<echo message="Usage (from command line):"/>
+		<echo message="ant -buildfile *filename* *command*" />
+		<echo message="------------------------------------------------------"/>
+		<echo message="*filename* = the build.xml you are using. Each server should have its own build.xml (ex. build-qa.xml). This only needed if not using a default build.xml file."/>
+		<echo message="*command* = the action you want to perform with the application"/>
+		<echo message="------------------------------------------------------"/>
+		<echo message="Command List:"/>
+		<echo message="coming soon....."/>
+
+	
+	</target>
+
+	<target name="init">
+
+		<!-- Create the build directory structure used by compile -->
+		<delete dir="${build}"/>
+		
+		<mkdir dir="${build}"/>
+		<mkdir dir="${build}/classes"/>		
+		<mkdir dir="${build}/lib"/>
+		
+		<copy todir="${webroot}/${webapp_dir}/docs">
+			<fileset dir="${build}/docs"/>
+		</copy>			
+
+		<fixcrlf srcdir="${build}" tab="add" includes="**/*.java"/>			
+		
+	</target>
+	
+	<target name="compile" depends="init" description="compile the source " >
+
+	</target>
+	
+	<target name="testCompile" description="compile the source " >
+		<exec dir="${src}" executable="lejosjc" os="Windows 2000" output="${src}/dir.txt">
+		  <arg line="-verbose robotHandler -o robotHandler.bin > robotHandler.sig"/>
+		</exec>		
+	</target>
+	
+
+</project>
